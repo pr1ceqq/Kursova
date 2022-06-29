@@ -25,7 +25,7 @@ namespace MyApi.Clients
             botClient.StartReceiving(HandlerUpdateSync, HandlerErrorAsync, receiverOptions, cancellationToken);
             var Botme = await botClient.GetMeAsync();
             Console.WriteLine($"The Bot {Botme.Username} starts working!");
-            Console.ReadKey();
+            Thread.Sleep(int.MaxValue);
         }
 
         private Task HandlerErrorAsync(ITelegramBotClient botClient, Exception exception,
