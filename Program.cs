@@ -2,4 +2,3 @@
 
 TelClient TbotTelClient = new TelClient();
 await TbotTelClient.Start();
-Console.ReadKey();
