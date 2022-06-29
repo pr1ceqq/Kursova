@@ -129,7 +129,7 @@ namespace MyApi.Clients
                 list = client.FindFav(message.Chat.Id).Result;
                 Count = list.Count;
                 string mangaa;
-                if (Count == null)
+                if (Count == 0)
                 {
                     await botClient.SendTextMessageAsync(message.Chat.Id, "You have no favs");
                 }
