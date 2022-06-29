@@ -8,7 +8,7 @@ namespace MyApi.Clients
     {
         private HttpClient _client;
         private static string _address;
-        string connectionString = "mongodb+srv://@favorites.i5xkzfp.mongodb.net/?retryWrites=true&w=majority";
+        string connectionString = "mongodb+srv://pr1ceqq:qkxhwbxq217ASshxy@favorites.i5xkzfp.mongodb.net/?retryWrites=true&w=majority";
         string databaseName = "favourites";
         public MangaClient()
         {
